@@ -1,13 +1,13 @@
 package piscine
 
-func Max(a []int) int {
-	if len(a) == 0 {
+func Max(numbers []int) int {
+	if len(numbers) == 0 {
 		return 0
 	}
-	max := a[0]
-	for _, n := range a {
-		if n > max {
-			max = n
+	max := numbers[0]
+	for _, number := range numbers {
+		if number > max {
+			max = number 
 		}
 	}
 	return max
