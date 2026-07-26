@@ -9,7 +9,7 @@ import (
 func renderLines(segment string, blockMaps map[rune][]string, colorCode string, letters string) []string {
     var output []string
 
-        for row := 0; row < 8; row++ {
+        for row := range 8{
             var rawRow strings.Builder
             for _, ch := range segment {
                 
