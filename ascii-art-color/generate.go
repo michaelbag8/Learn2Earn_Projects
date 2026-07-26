@@ -17,12 +17,12 @@ func Generate(input string, banner map[rune][]string, colorCode string, letters 
 
 	for i, segment := range segments {
 		if segment == "" {
-			if i < len(segments)-1{
-				output.WriteString("\n")
-			}
-			// if i == 0 || segments[i-1] != "" {
-			// 	output.WriteString("\n")
-			// }
+			//if i < len(segments)-1{
+				//output.WriteString("\n")
+			//}
+			 if i == 0 || segments[i-1] != "" {
+			 	output.WriteString("\n")
+			 }
 			continue
 		}
 
@@ -39,9 +39,9 @@ func Generate(input string, banner map[rune][]string, colorCode string, letters 
 			output.WriteString(row)
 			output.WriteString("\n")
 		}
-		if i < len(segments)-1{
-				output.WriteString("\n")
-			}
+		//if i < len(segments)-1{
+				//output.WriteString("\n")
+			//}
 
 	}
 	return output.String()
